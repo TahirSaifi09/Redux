@@ -31,7 +31,7 @@ export const counterSlice = createSlice ({
         reset : (state) =>{
             return{
                 ...state,
-                value: state.value,
+                value: 0,
             };
         },
     },
@@ -43,4 +43,4 @@ export const counterSlice = createSlice ({
 });
 
 export const { increase, decrease, reset} = counterSlice.actions;
-export const { value, loading, error} = counterSlice.selectors;
+export const { value, loading, error} = counterSlice.selectors
